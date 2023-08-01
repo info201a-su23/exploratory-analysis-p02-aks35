@@ -3,52 +3,236 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
-
-Give your project a concise, interesting title that summarizes the entirety of your project
+## A Comprehensive Analysis of  HIV/AIDS Epidemiological Trends in New York City
 
 ### Authors
 
-Names of your team members
+* Akshata Aravind - aksh353@uw.edu
+* Michelle Ndugulile - mndugu@uw.edu
+* Saikrishna Pappuru - spappuru@uw.edu
+* Thao-Nguyen Ho - uwthao07@uw.edu
 
 ### Date
 
-Winter 2022
+Summer 2023
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is how has HIV prevalence changed overtime in various regions
+and sub-populations of New York City throughout 2011-2015? This question is
+important because analyzing population data is significant to understanding the
+nature of the spread of immunodeficiency diseases in our populations. Using this
+dataset, our project aims to showcase which demographics are most affected by
+the HIV epidemic in New York City and how this analysis can possibly contribute
+to creating targeted public health interventions and solutions.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+1. Epidemiology
+2. Public Health
+3. Immunodeficiency Disease
+4. Global Epidemic
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+While our main research question encompasses analyzing the prevalence of HIV
+overtime in various regions of New York City, there are numerous other questions
+that can be posed about this extensive dataset. For instance, investigating a
+plausible correlation between gender and the risk of contracting HIV.
+Additionally, this dataset can lead to investigating disparities in HIV
+prevalence among different racial and ethnic groups in New York City,
+highlighting the impact of racial background when it comes to healthcare.
+Bouncing off our main research question, another topic that emerges is if
+geographical clusters or hotspots of HIV transmission are present.
+
+Overall, these are a combination of research questions that will be analyzed
+under this dataset. Understanding the primary target population and how the HIV
+disease may affect people differently based on gender, race, and location can
+significantly impact prevalence and subsequent treatment for patients. It is
+important to analyze and research these questions since there are many social
+determinants of health that shape the healthcare experience and treatments for
+individuals. These unique data analyses and paths of inquiry can contribute to
+creating more personalized healthcare that addresses key issues and causes of
+diseases amongst populations, such as HIV transmission throughout New York City.
+
+Research Questions:
+
+* **Main**: How has HIV prevalence changed overtime in various regions and sub-populations of New York City throughout 2011-2015?
+
+*	Which groups of people/populations are most likely to contract HIV?
+
+*	Is there a correlation between gender and the risk of contracting HIV/AIDS? Do gender attitudes and behaviors contribute to that risk?
+
+*	How has the death rate changed over time? What factors might cause this trend?
+
+*	Are there any geographical clusters or hotspots of HIV transmission?
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+HIV is a retrovirus that attacks the immune system of the body, primarily CD4+
+T cells, which are essential for fighting off infections. The immune system
+gradually deteriorates as the virus replicates and kills these cells, making an
+individual more susceptible to a variety of opportunistic infections. AIDS
+develops when the immune system is significantly damaged and the CD4+ T cell
+count falls below a critical level.
+
+HIV/AIDS prevalence refers to the percentage of people living with the virus at
+a given point in time. Looking specifically at the state of New York's
+prevalence, these sources emphasize the fluctuation in HIV diagnoses over the
+past 35 years. The two NY State Surveillance Annual Reports specifically pull
+data for each NY borough up until the year 2015 - data that can correspond to
+our chosen project dataset. The remaining articles assess the decline and rise
+of diagnoses from 2019 - 2021 to further assess the impact the virus has had on
+various communities in New York.
+
+This data serves as an essential epidemiological indicator that aids in
+understanding the impact of HIV/AIDS in a given community. Understanding its
+prevalence is crucial in helping to facilitate a design of focused interventions
+to prevent transmission and to enhance health outcomes for people living with
+HIV/AIDS. Monitoring changes in prevalence over time can help public health
+professionals evaluate the impact and effectiveness of preventive measures, and
+to therefore assess new strategies to encourage the success of curbing the
+spread of the virus.
+
+Citations:
+
+* HIV Epidemiology Program. *HIV Surveillance Annual Report, 2020*. New York
+City Department of Health and Mental Hygiene: New York, NY. December 2021. https://www.nyc.gov/site/doh/about/press/pr2021/new-hiv-diagnoses-declined.page
+
+* *New York State HIV/AIDS County Surveillance Report*, https://www.health.ny.gov/diseases/aids/general/statistics/annual/counties/annual_rpt_including2014.pdf. Accessed 27 July 2023.
+
+* "Local Data: New York State." *AIDSVu*, 2 Dec. 2020, https://aidsvu.org/local-data/united-states/northeast/new-york/
+
+* Mandavilli, Apoorva. "H.I.V. Infections Remain Persistently High, U.N. Reports."
+*The New York Times*, 27 July 2022, https://www.nytimes.com/2022/07/27/health/hiv-infections-unaids.html
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+Where did you find the data? Please include a link to the data source
+
+* We found the data through this [data.world](https://data.world/city-of-ny/fju2-rdad) page.
+
+Who collected the data?
+
+* New York City collected the data to submit to the Department of Health and
+Mental Hygiene (DOHMH) for the HIV Surveillance Annual Report.
+
+How was the data collected or generated?
+
+* Based on the CDC (Centers for Disease Control and Prevention) website, the HIV
+Surveillance data is collected from persons with diagnosed HIV infection.
+
+Why was the data collected?
+
+* The data was collected to provide an overview on the current epidemiology
+(distribution and determinants of health) of HIV disease in the U.S. and
+dependent areas. This specific dataset was collected for New York City's
+surveillance of HIV through the years of 2011-2015.
+
+How many observations (rows) are in your data?
+
+* There are 6,005 observations (rows) in the dataset.
+
+How many features (columns) are in the data?
+
+* There are 18 features (columns) in the dataset.
+
+What, if any, ethical questions or questions of power do you need to consider when working with this data?
+
+* There are many ethical questions and questions of power that need to be
+considered when working with data. Firstly, this dataset deals with personal
+healthcare information, which can fringe on patient privacy if not collected or
+analyzed carefully. Since HIV is a sensitive topic in society as a result of
+taboo and stigma over the years, one key question of power that comes to mind is
+how transparent is the data collecting process to the participants? Did they get
+informed of how their data will be stored and used? Furthermore, healthcare
+access and resources in the U.S. vary based on demographics and social
+determinants of health, which leads to the ethical question of who has access to
+the healthcare resources to be able to get tested for HIV? These are a few of
+the most significant ethical questions and questions of power that revolve
+around this HIV Surveillance dataset.
+
 What are possible limitations or problems with this data?   (at least 200 words)
+
+* There are a few possible limitations with this HIV Surveillance data. For
+instance, not all HIV cases may be reported through the surveillance system as
+some individuals may be unaware of their HIV status. Many people may not even
+test for HIV as healthcare education in various locations vary (lack of
+healthcare education results in lower test rates), while others may not wish to
+test as a result of social pressures and stigma. This could ultimately lead to underestimations in HIV prevalence in the data. Additionally, another limitation
+is that certain key populations may be underrepresented in the data due to
+reluctance to engage with healthcare workers or lack of access to healthcare
+services. Certain populations and marginalized populations, such as unhoused
+populations, may face this reluctance to engage with healthcare and legal
+systems, resulting in an overrepresentation of populations that may not be
+highly affected by HIV prevalence and transmission. Furthermore, although this
+dataset extensively covers demographic and clinical information - such as, age,
+gender, race, location, concurrent diagnoses, viral suppressions, etc.- this
+dataset does not cover behavioral backgrounds on the demographics. Behavioral
+backgrounds would include sexual behaviors, substance behaviors, and genetic
+patterns that could shape the context of individuals within the dataset. This is
+a limitation that results in the lack of understanding of personal stories and
+experiences of HIV prevalence, which is key in understanding the spread of the
+disease in addition to the demographic/clinical factors to illustrate a whole
+story with perspective and depth.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Our research project's examination of HIV's epidemiological trends in NYC
+carries significant implications. These can range from influencing the
+development of technological solutions, guiding the design of effective public
+health interventions, and informing policy-making to unearth deeper health
+disparities.
+
+For technologists, the insights derived from this comprehensive dataset could
+lead to transformative developments in the healthcare domain. By uncovering
+trends in HIV prevalence, technologists can develop predictive models and
+informatics solutions that improve detecting and monitoring the outbreaks.
+However, a potential negative implication might be misinterpreting the data,
+which may lead to inaccurate predictions.
+
+Designers can benefit by gaining a better understanding of the demographics
+that are most affected by the HIV epidemic. This knowledge can guide the
+creation of culturally sensitive and targeted health campaigns, informational
+materials, and digital interfaces that resonate with and effectively educate
+these populations. However, the potential negative implication is that if the
+data is not interpreted with care, designers could unintentionally stigmatize or
+stereotype certain populations, causing further harm.
+
+For policymakers, the research findings could provide valuable evidence to
+inform and influence health policies. The trends and patterns identified could
+guide decisions on resource allocation, implementation of preventive measures,
+and crafting of interventions to address the HIV/AIDS issue more effectively. A
+potential negative implication here is that the data might reveal gaps or
+shortcomings in existing policies, necessitating difficult changes or
+acknowledging failures in previous approaches. However, these revelations, while
+challenging, are crucial for driving improvement in public health policy and
+outcomes.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+* **Data Availability and Quality**: The reliability of the data may be
+compromised depending on the different sub-populations and geographies in New
+York City from 2011 to 2015. Some demographic groups may have been
+underrepresented in the data collecting and reporting systems, which might have
+influenced the study.
+
+* **Ethics and Confidentiality**: Since HIV/AIDS data comprises private and
+sensitive information, ethical questions about permission and privacy are
+raised. In order to safeguard the privacy of the subjects, it is important to
+consider that the data may not reflect all individuals with HIV/AIDS in each
+borough, based on an individual not wanting to share status.
+
+* **Causality vs. Correlation**: The project aims to identify correlations
+between certain variables and HIV/AIDS prevalence, but establishing causality
+can be complex. Determining clear cause-and-effect linkages is difficult since
+many other factors, including gender attitudes and behaviors, may have had an
+impact on risk factors for HIV/AIDS.
+
+* **Sample Representation**: It might be challenging to guarantee the
+representation of the sample while studying several sub-populations. Some
+populations may have had low numbers, or might have been difficult to contact,
+leading to possible bias and restrictions on generalizing the data.
 
 ### Summary Information
 
