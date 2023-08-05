@@ -318,7 +318,7 @@ that cause the group to have the highest HIV rate.
   communities.
 
 ### Chart 3: HIV and AIDS Related Death Rate Overtime (2011-2015) in New York
-```{r, echo = FALSE, code = readLines("third_chart.R")}
+```{r, echo = FALSE, message = FALSE, code = readLines("third_chart.R")}
 ```
 
 This chart illustrates the trend of HIV and AIDS related death rate over time from the years of 2011-2015 in New York. Each point represents the HIV and AIDS related death rate for the designated year and showcases the correlation between these two variables.
