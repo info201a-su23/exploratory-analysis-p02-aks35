@@ -237,11 +237,44 @@ leading to possible bias and restrictions on generalizing the data.
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+* Based on the analysis of the provided data, we found that 
+there was an average of 26.5 HIV diagnoses annually. The 
+mean HIV diagnosis rate was 119.5 per 100,000 population, 
+indicating a significant prevalence of the disease. Over 
+the course of the data collection period, there were a total
+of 296,932 deaths reported. The impact of the disease seems to
+be more severe among males, with 93,251 males affected by HIV, 
+compared to 25,844 females. This data underscores the importance
+of gender-sensitive approaches to HIV prevention and treatment 
+strategies. The information provided by this data provides valuable 
+insights into the HIV/AIDS situation in the area and can guide future
+research and public health initiatives.
+
+
 ### Table
 
 Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
+
+* We include the table below to provide a summarized view of 
+the HIV situation across different boroughs in the dataset. 
+This aggregate view allows us to quickly compare and contrast 
+the impact of HIV among different boroughs, as well as between
+different genders within those boroughs.
+
+
+```{r table_aggregate, echo=FALSE}
+# Run the script to generate the table
+source("aggregate_table.R")
+
+# Load the table
+df_aggregate <- readRDS("df_aggregate.RDS")
+
+# Display table
+knitr::kable(df_aggregate, caption = "Aggregate HIV data by Borough.")
+
+```
 
 ### Chart 1
 
@@ -254,11 +287,35 @@ Here's an example of how to run an R script inside an RMarkdown file:
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
-### Chart 2
+### Chart 2: HIV Diagnoses Across Different Race between 2011 and 2015 in NYC
 
-Include a chart
+```{r chart, echo = FALSE, message = FALSE}
+source("second_chart.R")
+plot(chart)
+```
 
-Describe why you chose this chart and what information it reveals
+This chart visualizes the HIV diagnoses across different racial groups from 2011
+to 2015 in NYC.
+
+#### Purpose
+
+By comparing the HIV diagnoses across different racial groups, this chart seeks
+to express which group is the most likely to contract HIV. The chart allows us
+to understand which group needs more attention and resources in reducing the
+risk of contracting HIV and allows us to explore the underlying systems/factors
+that cause the group to have the highest HIV rate.
+
+#### Insights
+
+- **Black** people have the **highest** number of HIV diagnoses recorded from
+2011-2015, while **Asian/Pacific Islander** people have the **lowest**.
+  - There's a big gap in HIV diagnoses between these two groups, while there's
+  a smaller gap between Black and Latino/Hispanic. And HIV diagnoses for
+  White is approximately half that of Latino/Hispanic.
+- This result may indicate the **lack of access to healthcare and proper HIV**
+**education** in Black and Latino/Hispanic communities. 
+  - We need to make preventive programs and treatment more accessible to these
+  communities.
 
 ### Chart 3: HIV and AIDS Related Death Rate Overtime (2011-2015) in New York
 ```{r, echo = FALSE, code = readLines("third_chart.R")}
