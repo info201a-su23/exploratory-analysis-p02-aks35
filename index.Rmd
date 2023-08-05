@@ -18,8 +18,7 @@ Summer 2023
 
 ### Abstract
 
-Our main question is how has HIV prevalence changed overtime in various regions
-and sub-populations of New York City throughout 2011-2015? This question is
+Our main question is how has HIV prevalence changed overtime in various sub-populations of New York City throughout 2011-2015? This question is
 important because analyzing population data is significant to understanding the
 nature of the spread of immunodeficiency diseases in our populations. Using this
 dataset, our project aims to showcase which demographics are most affected by
@@ -36,7 +35,7 @@ to creating targeted public health interventions and solutions.
 ### Introduction  
 
 While our main research question encompasses analyzing the prevalence of HIV
-overtime in various regions of New York City, there are numerous other questions
+overtime in various sub-populations of New York City, there are numerous other questions
 that can be posed about this extensive dataset. For instance, investigating a
 plausible correlation between gender and the risk of contracting HIV.
 Additionally, this dataset can lead to investigating disparities in HIV
@@ -57,7 +56,7 @@ diseases amongst populations, such as HIV transmission throughout New York City.
 
 Research Questions:
 
-* **Main**: How has HIV prevalence changed overtime in various regions and sub-populations of New York City throughout 2011-2015?
+* How has HIV prevalence changed overtime in various regions and sub-populations of New York City throughout 2011-2015?
 
 *	Which groups of people/populations are most likely to contract HIV?
 

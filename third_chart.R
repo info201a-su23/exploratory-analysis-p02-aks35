@@ -1,7 +1,9 @@
 # AUTHOR: Akshata Aravind
 # This script plots a line graph of the annual HIV and AIDS
 # related death rate in New York from the years 2011 to 2015
-
+options(dplyr.summarise.inform = FALSE)
+options(tibble.print_max = Inf)
+options(conflict_prefer = "dplyr")
 library(tidyverse)
 library (dplyr)
 
