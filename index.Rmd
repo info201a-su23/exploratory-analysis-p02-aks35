@@ -288,11 +288,35 @@ Here's an example of how to run an R script inside an RMarkdown file:
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
-### Chart 2
+### Chart 2: HIV Diagnoses Across Different Race between 2011 and 2015 in NYC
 
-Include a chart
+```{r chart, echo = FALSE, message = FALSE}
+source("second_chart.R")
+plot(chart)
+```
 
-Describe why you chose this chart and what information it reveals
+This chart visualizes the HIV diagnoses across different racial groups from 2011
+to 2015 in NYC.
+
+#### Purpose
+
+By comparing the HIV diagnoses across different racial groups, this chart seeks
+to express which group is the most likely to contract HIV. The chart allows us
+to understand which group needs more attention and resources in reducing the
+risk of contracting HIV and allows us to explore the underlying systems/factors
+that cause the group to have the highest HIV rate.
+
+#### Insights
+
+- **Black** people have the **highest** number of HIV diagnoses recorded from
+2011-2015, while **Asian/Pacific Islander** people have the **lowest**.
+  - There's a big gap in HIV diagnoses between these two groups, while there's
+  a smaller gap between Black and Latino/Hispanic. And HIV diagnoses for
+  White is approximately half that of Latino/Hispanic.
+- This result may indicate the **lack of access to healthcare and proper HIV**
+**education** in Black and Latino/Hispanic communities. 
+  - We need to make preventive programs and treatment more accessible to these
+  communities.
 
 ### Chart 3: HIV and AIDS Related Death Rate Overtime (2011-2015) in New York
 ```{r, echo = FALSE, code = readLines("third_chart.R")}
