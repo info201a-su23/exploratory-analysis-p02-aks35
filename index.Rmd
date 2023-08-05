@@ -281,18 +281,18 @@ knitr::kable(df_aggregate, caption = "Aggregate HIV data by Borough.")
 ```
 
 ### Chart 1: HIV Diagnosis by Gender from 2011 to 2015
-```{r chart_1, echo = FALSE, message = FALSE}
+```{r chart_first, echo = FALSE, message = FALSE}
 source("first_chart.R")
-plot(chart_1)
+plot(chart_first)
 ```
 
 This chart is a visual representation depicting the number of HIV diagnoses by gender from 2011 to 2015 in the state of New York. 
 
-### Purpose
+#### Purpose
 
 The bar chart illustrates the distribution of HIV diagnoses among different genders. Each gender is represented by a bar, and its height reflects the respective number of HIV diagnoses. This visual aid allows us to easily compare HIV diagnosis patterns across genders from 2011 to 2015. Examining these patterns allow for analysis of gender-specific disparities in HIV transmission, providing valuable and more targeted insights into public health protocols.
 
-### Insights
+#### Insights
 -In addition to the gender-specific distribution of HIV diagnoses, the analysis also highlights the substantial disparities among different gender categories. The chart underscores that **males** experienced the **highest** number of HIV diagnoses during the five-year period, surpassing 2,500 cases. Conversely, **females** had the **second-highest** count, with just under 1,000 cases, and the **transgender** category displayed the **lowest** number of cases. The discrepancy in **transgender** diagnoses may reflect a **smaller population undergoing HIV testing** within the category, leading to a reduced overall count of positive cases. This data suggests potential variations in **risk behaviors, healthcare access, and prevention efforts**, contributing to this variability.
 
 -The "ALL" category from the gender variable was excluded when plotting the bar chart. By omitting this category, which aggregates diagnoses across all boroughs in the state of New York, the focus remains on the distinct gender-specific trends totaled from boroughs.
@@ -328,7 +328,9 @@ that cause the group to have the highest HIV rate.
   communities.
 
 ### Chart 3: HIV and AIDS Related Death Rate Overtime (2011-2015) in New York
-```{r, echo = FALSE, message = FALSE, code = readLines("third_chart.R")}
+```{r chart_third, echo = FALSE, message = FALSE}
+source("third_chart.R")
+plot(chart_third)
 ```
 
 This chart illustrates the trend of HIV and AIDS related death rate over time from the years of 2011-2015 in New York. Each point represents the HIV and AIDS related death rate for the designated year and showcases the correlation between these two variables.

@@ -22,7 +22,7 @@ annual_death_rates <- hiv_data %>%
   select(Year, Death.rate)
 
 # Plotting the data in a line graph
-ggplot(data = annual_death_rates, aes(x = Year, y = Death.rate, group = 1)) +
+chart_third <- ggplot(data = annual_death_rates, aes(x = Year, y = Death.rate, group = 1)) +
   geom_line(color = "blue") +
   geom_point() +
   labs(

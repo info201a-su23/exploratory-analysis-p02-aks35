@@ -12,7 +12,7 @@ df <- read.csv("https://query.data.world/s/phe5vpwsnbsigqddt5ydcylbim5om6?dws=00
 
 # Plot data onto bar chart with filtered gender category "ALL" 
 # from data frame to exclude repeats
-ggplot(
+chart_first <- ggplot(
   filter(df, Gender != "All"),
   aes(x = Gender, y = HIV.diagnoses, fill = Gender)) +
   geom_bar(stat = "identity", position = "dodge") +
