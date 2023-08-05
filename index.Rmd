@@ -237,16 +237,20 @@ leading to possible bias and restrictions on generalizing the data.
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-* Based on the analysis of the provided data, we found that 
-there was an average of 26.5 HIV diagnoses annually. The 
-mean HIV diagnosis rate was 119.5 per 100,000 population, 
-indicating a significant prevalence of the disease. Over 
+```{r setup, include=FALSE}
+source("summary_info.R")
+summary_info <- summary_info()
+```
+
+* Based on the analysis of the provided data, we found that
+there was an average of `r summary_info$mean_HIV_diagnoses` HIV diagnoses annually. The
+mean HIV diagnosis rate was `r summary_info$mean_HIV_diagnosis_rate` per 100,000 population,
+indicating a significant prevalence of the disease. Over
 the course of the data collection period, there were a total
-of 296,932 deaths reported. The impact of the disease seems to
-be more severe among males, with 93,251 males affected by HIV, 
-compared to 25,844 females. This data underscores the importance
-of gender-sensitive approaches to HIV prevention and treatment 
-strategies. The information provided by this data provides valuable 
+of `r summary_info$total_deaths` deaths reported. The impact of the disease seems to
+be more severe among males, with `r summary_info$total_males_affected_HIV` males affected by HIV,
+compared to `r summary_info$total_females_affected_HIV` females. This data underscores the importance of gender-sensitive approaches to HIV prevention and treatment
+strategies. The information provided by this data provides valuable
 insights into the HIV/AIDS situation in the area and can guide future
 research and public health initiatives.
 
