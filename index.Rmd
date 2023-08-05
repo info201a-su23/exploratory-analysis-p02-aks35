@@ -238,11 +238,26 @@ leading to possible bias and restrictions on generalizing the data.
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+We include the table below to provide a summarized view of the HIV situation across different boroughs in the dataset. This aggregate view allows us to quickly compare and contrast the impact of HIV among different boroughs, as well as between different genders within those boroughs.
+
+
 ### Table
 
 Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
+
+```{r table_aggregate, echo=FALSE}
+# Run the script to generate the table
+source("aggregate_table.R")
+
+# Load the table
+df_aggregate <- readRDS("df_aggregate.RDS")
+
+# Display table
+knitr::kable(df_aggregate, caption = "Aggregate HIV data by Borough.")
+
+```
 
 ### Chart 1
 
