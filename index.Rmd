@@ -261,8 +261,18 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-### Chart 3
+### Chart 3: HIV and AIDS Related Death Rate Overtime (2011-2015) in New York
+```{r, echo = FALSE, code = readLines("third_chart.R")}
+```
 
-Include a chart
+This chart illustrates the trend of HIV and AIDS related death rate over time from the years of 2011-2015 in New York. Each point represents the HIV and AIDS related death rate for the designated year and showcases the correlation between these two variables.
 
-Describe why you chose this chart and what information it reveals
+### Purpose
+By graphing the correlation between HIV and AIDS related death rate and year, this chart allows us to observe the trend of how HIV and AIDS has affected mortality of those who have the disease over the years of 2011-2015. This chart allows us to analyze whether the HIV/AIDS epidemic has been increasing, decreasing, or stabilizing overtime in New York. Furthermore, the illustrated trend in the chart can be used to provide insight into public health interventions, campaigns, and overall HIV/AIDS treatment effectiveness in New York from 2011-2015.
+
+### Insights
+- There is a significant **downward trend** in the HIV and AIDS related death rate from 2011-2015
+  - Overall, the death rate decreases from **13.6 in 2011** to **9.6 in 2015**
+  - The magnitude of change in the death rate is notable at 4.0 points
+- The downward trend suggests **improvement in sexual & health education and treatment efficiency** targeting HIV and AIDS mortality
+  - This trend may be influenced by the increase of awareness campaigns, testing access, and treatment support from NYC health in New York throughout 2011-2015.
